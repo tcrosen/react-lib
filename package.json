@@ -1,11 +1,12 @@
 {
   "name": "react-lib",
-  "version": "1.0.0",
+  "libraryName": "reactLib",
+  "version": "1.0.0-0.0.0",
   "description": "React library starter template",
-  "main": "dist/index.js",
+  "main": "dist/react-lib.js",
   "module": "src/index.js",
   "scripts": {
-    "start": "webpack",
+    "start": "webpack --watch",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +14,6 @@
   "license": "ISC",
   "dependencies": {
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
     "webpack": "^3.9.1"
   },
   "devDependencies": {

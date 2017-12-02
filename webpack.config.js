@@ -1,14 +1,15 @@
-var path = require('path');
+const path = require('path');
+const pkg = require('./package.json');
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'my-lib.js',
-    library: 'myLib',
+    filename: `${pkg.name}.js`,
+    library: pkg.libraryName,
     libraryTarget: 'umd',
   },
-  externals: ['react', 'react-dom'],
+  externals: Object.keys(pkg.dependencies),
   module: {
     rules: [
       {

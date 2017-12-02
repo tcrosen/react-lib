@@ -1,5 +1,9 @@
 import React from 'react';
 
-const MyLibComponent = () => <div>My lib</div>;
+export const ReactLibComponent = () => <div>My first React library component (or maybe not)!</div>;
 
-export default MyLibComponent;
+const reactLib = {
+  ReactLibComponent,
+};
+
+export default reactLib;
