@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const ReactLibComponent = () => <div>My first React library component (or maybe not)!</div>;
+export const ReactLibComponent = () => <span>My first React library component (or maybe not)!</span>;
 
 const reactLib = {
   ReactLibComponent,
