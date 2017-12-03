@@ -4,7 +4,6 @@
   "version": "1.0.0-0.0.0",
   "description": "React library starter template",
   "main": "dist/react-lib.js",
-  "module": "src/index.js",
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack",
