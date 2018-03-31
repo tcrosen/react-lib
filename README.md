@@ -1,9 +1,11 @@
 # React Library Starter
 
-A minimal starter template for React components that are intended to be distributed as a module.
+A minimal starter template for React components that are intended to be distributed with styles via npm.
 
 **Technologies**
 
+* React
+* Styled Components
 * Babel
 * Webpack
 * Jest
@@ -11,19 +13,14 @@ A minimal starter template for React components that are intended to be distribu
 
 ## Development Process
 
-1. Run `npm link` (only required once)
-1. Run `npm start`
-1. In another app, install using `link`:
+1.  Run `npm link` to create a local symlink of your package.
+1.  Run `npm start` to start webpack.
+1.  In another app, run `npm link my-react-lib` to install your package locally.
+1.  Import your components into your app:
 
-```sh
-$ npm link react-lib
-```
-
-1. Import into the app:
-
-```js
-import { ReactLibComponent } from 'react-lib';
-```
+    ```js
+    import Button from 'my-react-lib/lib/Button';
+    ```
 
 ## Build Commands
 
