@@ -1,6 +1,6 @@
 {
   "name": "my-react-lib",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React library starter template",
   "scripts": {
     "start": "webpack --watch",
