@@ -6,7 +6,8 @@
         "modules": false
       }
     ],
-    "react"
+    "react",
+    "stage-2"
   ],
 
   "plugins": ["babel-plugin-styled-components"],
