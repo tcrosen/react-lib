@@ -20,36 +20,28 @@ A starter template for React component libraries that are intended to be distrib
     $ cd <your new dir>
     ```
 
-1.  Modify the `package.json` file so it correctly represents your new library:
+1.  Modify the `package.json` as necessary so it correctly represents your new library:
 
 ```diff
 -  "name": "my-react-ui",
 +  "name": "your-new-npm-package-name",
 -  "version": "2.0.0",
 +  "version": "1.0.0",
--  "description": "A collection of themable React components.",
-+  "description": "Your new description",
--  "author": "Terry Rosen",
-+  "author": "Your Name"
-  "license": "ISC",
-  "repository": {
-    "type": "git",
--    "url": "https://github.com/tcrosen/react-lib.git"
-+    "url": "https://github.com/your-github-name/your-repo.git"
-  }
 ```
 
-### Development Components
+### Local Development
 
-1.  Run `npm start` to start the development server.
+1.  Run `npm start` to start a local development server where you can render and test your components.
+
+### Distributed Development
+
+1.  Build the package for distribution (optionally with watch enabled) `npm run build [-- --watch]`
 1.  Run `npm link` to create a local symlink of your package.
-
-1.  Run `npm start` to start webpack.
-1.  In another app, run `npm link my-react-lib` to install your package locally.
-1.  Import your components into your app:
+1.  In another app, run `npm link <your-package-name>` to install your package locally.
+1.  Import components into your app:
 
     ```js
-    import Button from 'my-react-lib/lib/Button';
+    import Button from '<your-package-name>/lib/Button';
     ```
 
 ## Build Commands
