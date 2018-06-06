@@ -1,3 +1,5 @@
 node_modules
+src/
+.*rc
 npm-debug.log
-webpack.config.js
+webpack.*.js

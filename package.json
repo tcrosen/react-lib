@@ -1,33 +1,46 @@
 {
-  "name": "my-react-lib",
-  "version": "1.1.0",
-  "description": "React library starter template",
+  "name": "my-react-ui",
+  "version": "2.0.0",
+  "description": "A collection of themable React components.",
+  "author": "Terry Rosen",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tcrosen/react-lib.git"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
   "scripts": {
-    "start": "webpack --watch",
-    "build": "webpack",
+    "start": "webpack-dev-server --open --config webpack.dev",
+    "build": "webpack --config webpack.prod",
     "test": "jest",
     "tdd": "npm run test -- --watch"
   },
-  "author": "Terry Rosen",
-  "license": "ISC",
   "dependencies": {
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "styled-components": "^3.2.6"
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "styled-components": "^3.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-jest": "^21.2.0",
+    "babel-jest": "^23.0.1",
     "babel-loader": "^7.1.4",
     "babel-plugin-styled-components": "^1.5.1",
     "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "jest": "^21.2.1",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.1.0",
+    "prop-types": "^15.6.1",
     "raf": "^3.4.0",
     "regenerator-runtime": "^0.11.1",
-    "webpack": "^3.11.0"
+    "webpack": "^4.10.2",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.2"
   }
 }
