@@ -22,18 +22,19 @@ A starter template for React component libraries that are intended to be distrib
 
 1.  Modify the `package.json` as necessary so it correctly represents your new library:
 
-```diff
--  "name": "my-react-ui",
-+  "name": "your-new-npm-package-name",
--  "version": "2.0.0",
-+  "version": "1.0.0",
-```
+    ```diff
+    -  "name": "my-react-ui",
+    +  "name": "your-new-npm-package-name",
+    -  "version": "2.0.0",
+    +  "version": "1.0.0",
+    etc...
+    ```
 
-### Local Development
+## Local Development
 
 1.  Run `npm start` to start a local development server where you can render and test your components.
 
-### Distributed Development
+## Distributed Development
 
 1.  Build the package for distribution (optionally with watch enabled) `npm run build [-- --watch]`
 1.  Run `npm link` to create a local symlink of your package.
@@ -44,7 +45,15 @@ A starter template for React component libraries that are intended to be distrib
     import Button from '<your-package-name>/lib/Button';
     ```
 
-## Build Commands
+## Releasing
+
+1. Run `npm version <options>` to bump version (see [official docs](https://docs.npmjs.com/cli/version) for options).
+1. Push to remote (usually `master`)
+1. Run `npm publish` to publish to official registry.
+
+> **Tip**: Use `npm view <package-name>` to verify what has been published without installing.
+
+## Scripts
 
 ### `npm run start`
 
