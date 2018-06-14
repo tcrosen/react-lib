@@ -16,7 +16,7 @@ A starter template for React component libraries that are intended to be distrib
 1.  Clone the master branch of this repo with no commit history:
 
     ```
-    $ git clone --depth=1 --single-branch https://github.com/tcrosen/react-lib.git <your new dir>
+    $ git clone --single-branch https://github.com/tcrosen/react-lib.git <your new dir>
     $ cd <your new dir>
     ```
 
