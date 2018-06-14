@@ -13,7 +13,7 @@ A starter template for React component libraries that are intended to be distrib
 
 ## How to Use This Repository as a Template
 
-1.  Clone the master branch of this repo with no commit history:
+1.  Clone the master branch of this repo:
 
     ```
     $ git clone --single-branch https://github.com/tcrosen/react-lib.git <your new dir>
@@ -29,6 +29,8 @@ A starter template for React component libraries that are intended to be distrib
     +  "version": "1.0.0",
     etc...
     ```
+
+1. Modify Git remote(s) to point to your own Github repository.
 
 ## Local Development
 
